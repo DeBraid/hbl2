@@ -2,8 +2,8 @@ Template.home.helpers({
   'feature' : function () {
     return [
       { 'text' : 'Meet the Candidates', 'icon' : 'archive', 'path' : '#packages' },
-      { 'text' : 'Meet the Contributors', 'icon' : 'archive', 'path' : '#packages' },
-      { 'text' : 'Blog', 'icon' : 'terminal', 'path' : '/blog' }
+      { 'text' : 'Blog', 'icon' : 'terminal', 'path' : '/blog' },
+      { 'text' : 'Meet the Contributors', 'icon' : 'archive', 'path' : '#packages' }
     ]
   },
   'candidate' : function () {
