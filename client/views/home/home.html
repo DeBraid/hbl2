@@ -11,7 +11,7 @@
     </div>
 
     <div id="packages" class="main-content padding-wrapper">
-        <div class="ui fitted horizontal icon divider"><i class="magic icon"></i></div>
+        <div class="ui fitted horizontal icon divider"><i class="flash icon"></i></div>
         <div class="ui two column stackable grid">
             <div class="middle aligned row">
                 <div class="center aligned column">
@@ -22,14 +22,9 @@
                 <div class="column">
                     <h3 class="large ui header">Hamilton Business Leaders <div class="sub header">presents 2014 Hamilton Mayorial Q&A</div></h3>
                     <p>We asked them for answers to some prudent city building questions.</p>
-                    <div class="ui list">
-                        {{#each candidate}}
-                            <a href="{{path}}" class="item no-underline link">
-                                <i class="archive icon"></i>
-                                {{name}}
-                            </a>
-                        {{/each}}
-                    </div>
+                    
+                    {{> questions }}
+
                     <div class="ui info message">
                         <div class="header">
                             Have feeedback?

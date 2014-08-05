@@ -1,0 +1,23 @@
+<template name="questions">
+
+    <div class="ui accordion">
+            {{#each candidate}}
+        <div class="title">
+            <i class="dropdown icon"></i>
+            
+                
+                {{name}}
+            
+        </div>
+        <div class="content">
+
+            
+                
+                {{answer}}
+            
+
+        </div>
+            {{/each}}
+
+    </div>
+</template>
