@@ -1,20 +1,17 @@
 Template.home.helpers({
   'feature' : function () {
     return [
-      { 'text' : 'Meet the Candidates', 'icon' : 'archive', 'path' : '#packages' },
+      { 'text' : 'Candidates', 'icon' : 'user', 'path' : '#packages' },
       { 'text' : 'Blog', 'icon' : 'terminal', 'path' : '/blog' },
-      { 'text' : 'Meet the Contributors', 'icon' : 'archive', 'path' : '#console-tool' }
+      { 'text' : 'Organizers', 'icon' : 'briefcase', 'path' : '#console-tool' }
     ]
   },
   'contributor' : function () {
     return [
-      { 'name' : 'Some Name', 'description' : 'Here is the description of Some Name' },
-      { 'name' : 'Some Name', 'description' : 'Here is the description of Some Name' },
-      { 'name' : 'Some Name', 'description' : 'Here is the description of Some Name' },
-      { 'name' : 'Some Name', 'description' : 'Here is the description of Some Name' },
-      { 'name' : 'Some Name', 'description' : 'Here is the description of Some Name' },
-      { 'name' : 'Some Name', 'description' : 'Here is the description of Some Name' },
-      { 'name' : 'Some Name', 'description' : 'Here is the description of Some Name' }
+      { 'name' : 'Hamilton Chamber of Commerce', 'logo' : '/images/hamchamber.jpg', 'homepage' : 'http://www.hamiltonchamber.on.ca/', 'description' : "Hamilton Chamber of Commerce, the Voice of Hamilton Business since 1845, now comprises almost 2,100 individuals representing about 1,200 employers of all sizes, and from over 130 diverse sectors, who collectively employ some 75,000 Hamiltonians Full Time from all parts of this City. Our research has confirmed that our members do indeed reasonably reflect, in suitable proportion, the broader demographics of Hamilton’s business community. From these members, we have engaged a strong group of almost 300 active business volunteers who provide a wide variety of experience and talent through twelve standing Chamber Committees and geographic Divisions (representing Ancaster, Dundas, and now Glanbrook). These volunteers represent collectively literally thousands of years of “hands on” practical experience regarding local business and community development issues; and are collectively a valuable consultative resource for the City. The basis of our own public policy positions (currently over 175) are derived from this resource." },
+      { 'name' : 'Flamborough Chamber of Commerce', 'logo' : '/images/flamchamber.png', 'homepage' : 'http://www.flamboroughchamber.ca/', 'description' : 'The Flamborough Chamber of Commerce has been serving the business community of the Greater Flamborough Area since 1982 and currently boasts an active membership of over 250 businesses and individuals. Providing a united front for businesses in the Flamborough Community. Dedicated to leadership in recognizing and encouraging good corporate citizenship, defending and promoting private enterprise, contributing toward the growth of a healthy local economy and continual improvement to the quality of life in the Community of Flamborough both as a unique entity and as an integral part of the City of Hamilton.'  },
+      { 'name' : 'Realtors Assoc. of Hamilton-Burlington', 'logo' : '/images/realtors.png', 'homepage' : 'http://www.rahb.ca/', 'description' : 'Established in 1921, the REALTORS® Association of Hamilton-Burlington (RAHB) represents more than 2,500 real estate brokers and sales representatives from Hamilton, Burlington, and outlying areas. Members of the association may use the REALTOR® trademark, which identifies them as real estate professionals who subscribe to a strict code of ethics. The association operates the local Multiple Listing Service® (MLS®) and provides ongoing professional education courses for its members. In addition, RAHB is an active participant in the Home Ownership Affordability Partnership (HOAP) and holds an annual auction in support of local charities.' },
+      { 'name' : 'Hamilton-Halton Homebuilders Assoc.', 'logo' : '/images/HHHBA.jpg', 'homepage' : 'http://www.hhhba.ca/', 'description' : 'The HHHBA has been the voice of the local residential construction industry since 1942. Our 250 members include builders, developers, skilled trades, suppliers and related service professionals. Maintaining a healthy housing market is crucial to a strong economy. We advocate for members on issues that affect our industry to ensure the residential construction voice is heard. We also advocate for consumers by working with elected officials and policy makers at all three levels of government to promote affordable, available and accessible new home construction. The HHHBA firmly supports the dream of home ownership and works to ensure that ALL Canadians are able to fulfill that dream.' }
     ];
   },
   'semanticElement' : function () {
