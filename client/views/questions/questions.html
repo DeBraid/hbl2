@@ -1,23 +1,18 @@
 <template name="questions">
 
     <div class="ui accordion">
-            {{#each candidate}}
+        {{#each candidate}}
         <div class="title">
             <i class="dropdown icon"></i>
-            
-                
-                {{name}}
-            
+            {{name}}
+
         </div>
         <div class="content">
 
-            
-                
-                {{answer}}
-            
+            {{answer}}
 
         </div>
-            {{/each}}
+        {{/each}}
 
     </div>
 </template>

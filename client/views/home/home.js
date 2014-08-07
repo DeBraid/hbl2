@@ -6,15 +6,6 @@ Template.home.helpers({
       { 'text' : 'Meet the Contributors', 'icon' : 'archive', 'path' : '#console-tool' }
     ]
   },
-  'candidate' : function () {
-    return [
-      { 'name' : 'Joe Smith', 'path' : 'https://github.com/EventedMind/iron-router' },
-      { 'name' : 'Jeff Munroe', 'path' : 'https://github.com/aldeed/meteor-collection2' },
-      { 'name' : 'Jane Kennedy', 'path' : 'http://semantic-ui.com/' },
-      { 'name' : 'Sally Struthers', 'path' : 'http://lesscss.org/' },
-      { 'name' : 'Raphael Sewerturtle', 'path' : 'http://jquery.com/' }
-    ];
-  },
   'contributor' : function () {
     return [
       { 'name' : 'Some Name', 'description' : 'Here is the description of Some Name' },

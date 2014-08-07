@@ -1,13 +1,17 @@
 <template name="header">
 
-    <div class="center aligned header-wrapper">
+    <div id="header" class="center aligned header-wrapper">
         <h1 class="huge center aligned ui header">
             Hamilton Business Leaders
             <div class="sub header">
-              <a href="{{pathFor 'home' }}">Home</a>
+             Dig deeper into the issues.
             </div>
-            
         </h1>
+
+        {{#if routeActive = blog }}
+        {{> yield region='homeButton'}}
+        {{/if }} 
+        
         <button class="basic ui resize icon button"><i class="angle down icon"></i></button>
     </div>
 </template>

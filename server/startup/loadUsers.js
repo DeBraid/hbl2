@@ -12,4 +12,5 @@ Meteor.startup(function () {
   for (key in users) if (users.hasOwnProperty(key)) {
     loadUser(users[key]);
   }
+
 });
