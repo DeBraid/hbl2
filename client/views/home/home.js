@@ -46,6 +46,7 @@ Template.home.events({
 
 
 Template.home.rendered = function () {
+  document.title = 'Hamilton Mayoral Election 2014 Homepage'
   // @see: http://stackoverflow.com/questions/5284814/jquery-scroll-to-div
   $('a[href*=#]:not([href=#])').click(function () {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
