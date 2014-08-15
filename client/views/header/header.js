@@ -8,4 +8,3 @@ Template['header'].events({
     $('.angle.icon').toggleClass('down').toggleClass('up');
   }
 });
-

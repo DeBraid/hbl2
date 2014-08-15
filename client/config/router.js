@@ -9,6 +9,6 @@ Router.configure({
 
 Router.map(function () {
   this.route('/blog', {
-    yieldTemplates: {'homeButton': {to: 'header'}}
+    yieldTemplates: {'homeButton': { to: 'header'}}
   })
 });
