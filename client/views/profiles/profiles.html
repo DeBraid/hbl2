@@ -1,5 +1,6 @@
 <template name="profiles">
   <div class="main-content padding-wrapper">
+        <h1>Candidates</h1>
         <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
         </div>
         <div class="ui two column stackable grid">
@@ -7,7 +8,7 @@
             <div class="middle aligned row">
                 <div class="center aligned column">
                     <div id="{{ name }}" class="center aligned icon-wrapper">
-                    <h1>{{ fullname }}</h1>
+                    <h2>{{ fullname }}</h2>
                         <img src="{{ imagePath }}" alt="">
                     </div>
                 </div>
@@ -18,7 +19,35 @@
 
                 </div>
             </div>
+            <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
+        </div>
             {{/each }}
         </div>
     </div>
+
+    {{> all }}
+</template>
+
+<template name="all">
+  <div id="all" class="main-content padding-wrapper">
+        <h1>All Candidates</h1>
+          {{#each person }}
+            <div class="ui fitted horizontal icon divider"><i class="user icon"></i></div>
+            <div class="ui one column stackable grid">
+              
+              <div class="middle aligned row">
+                  <div class="center aligned column">
+                    <div id="{{ name }}" class="center aligned icon-wrapper">
+                      <h4>{{ fullname }}</h4>
+                      <p>{{ email }}</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        {{/each }}
+    </div>
+
+
+  
 </template>
