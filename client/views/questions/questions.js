@@ -7,9 +7,9 @@ Template.questions.rendered = function () {
 Template.questions.helpers({
   'candidate' : function () {
     return [
-      { 'name' : 'Fred Eisenberger', 'answer' : 'Hamilton is great, please elect me.' },
-      { 'name' : 'Brad Clark', 'answer' : 'Hamilton is great, please elect me.' },
-      { 'name' : 'Brian McHattie', 'answer' : 'Hamilton is great, please elect me.' }
+      { 'name' : 'Fred Eisenberger', 'answer' : 'Hamilton is great, please elect me.', path: '/profiles#Fred' },
+      { 'name' : 'Brad Clark', 'answer' : 'Hamilton is great, please elect me.', path: '/profiles#Brad' },
+      { 'name' : 'Brian McHattie', 'answer' : 'Hamilton is great, please elect me.', path: '/profiles#Brian' }
     ];
   }
 });
