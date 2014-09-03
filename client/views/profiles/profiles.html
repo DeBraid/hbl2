@@ -5,9 +5,9 @@
         </div>
         <div class="ui two column stackable grid">
             {{#each profile }}
-            <div class="middle aligned row">
+            <div id="{{ name }}" class="middle aligned row">
                 <div class="center aligned column">
-                    <div id="{{ name }}" class="center aligned icon-wrapper">
+                    <div class="center aligned icon-wrapper">
                     <h2>{{ fullname }}</h2>
                         <img src="{{ imagePath }}" alt="">
                     </div>

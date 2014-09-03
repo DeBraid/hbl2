@@ -8,7 +8,9 @@ Router.configure({
 });
 
 Router.map(function () {
-  this.route('/blog', {
+  this.route('blog', {
+    path: '/blog',
+    template: 'blog',
     yieldTemplates: {'homeButton': { to: 'header'}}
   })
 
@@ -17,19 +19,9 @@ Router.map(function () {
     template: 'profiles'
   });
 
-  this.route('fred', {
-    path: '/fred',
-    template: 'fred'
-  });
-
-  this.route('brad', {
-    path: '/brad',
-    template: 'brad'
-  });
-
-  this.route('brian', {
-    path: '/brian',
-    template: 'brian'
+  this.route('register', {
+    path: '/register',
+    template: 'register'
   });
 
 });
