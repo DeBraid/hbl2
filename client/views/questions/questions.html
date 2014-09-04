@@ -2,17 +2,12 @@
 
     <div class="ui accordion">
         {{#each candidate}}
-        <div class="title">
-            <i class="dropdown icon"></i>
-            {{name}}
-
-        </div>
-        <div class="content">
-
-            {{answer}}
-            <a href="{{ path }}">See more...</a>
-
-        </div>
+            <div class="title">
+                <i class="dropdown icon"></i> {{name}}
+            </div>
+            <div class="content">
+                Click here to read <a href="{{ path }}">{{answer}}</a>
+            </div>
         {{/each}}
 
     </div>
