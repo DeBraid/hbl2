@@ -12,35 +12,7 @@ Template.home.helpers({
       { 'name' : 'Realtors Assoc. of Hamilton-Burlington', 'logo' : '/images/realtors.png', 'homepage' : 'http://www.rahb.ca/', 'description' : 'Established in 1921, the REALTORS® Association of Hamilton-Burlington (RAHB) represents more than 2,500 real estate brokers and sales representatives from Hamilton, Burlington, and outlying areas. Members of the association may use the REALTOR® trademark, which identifies them as real estate professionals who subscribe to a strict code of ethics. The association operates the local Multiple Listing Service® (MLS®) and provides ongoing professional education courses for its members. In addition, RAHB is an active participant in the Home Ownership Affordability Partnership (HOAP) and holds an annual auction in support of local charities.' },
       { 'name' : 'Hamilton-Halton Homebuilders Assoc.', 'logo' : '/images/HHHBA.jpg', 'homepage' : 'http://www.hhhba.ca/', 'description' : 'The HHHBA has been the voice of the local residential construction industry since 1942. Our 250 members include builders, developers, skilled trades, suppliers and related service professionals. Maintaining a healthy housing market is crucial to a strong economy. We advocate for members on issues that affect our industry to ensure the residential construction voice is heard. We also advocate for consumers by working with elected officials and policy makers at all three levels of government to promote affordable, available and accessible new home construction. The HHHBA firmly supports the dream of home ownership and works to ensure that ALL Canadians are able to fulfill that dream.' }
     ];
-  },
-  'semanticElement' : function () {
-    return [
-      { 'what' : 'Large Buttons', 'withBootstrap' : 'btn btn-lg', 'withSemanticUI' : 'ui large button' },
-      { 'what' : 'One column', 'withBootstrap' : 'col-md-1', 'withSemanticUI' : 'one wide column' },
-      { 'what' : 'Vertical Menu / Navigation', 'withBootstrap' : 'nav nav-pills', 'withSemanticUI' : 'ui vertical menu' }
-
-    ];
-  },
-  'bootstrapCode' : function () {
-    return '<div class="btn btn-primary btn-lg"></div>';
-  },
-  'folder' : function () {
-    return [
-      { 'root' : 'client', 'children' :
-        ['compatibility', 'config', ' lib', ' routes', ' startup', ' stylesheets', 'subscriptions',
-          'modules', 'views']
-      },
-      { 'root' : 'model' },
-      { 'root' : 'private' },
-      { 'root' : 'server', 'children' : ['fixtures', 'lib', 'publications', 'startup', 'tests'] },
-      { 'root' : 'public' },
-      { 'root' : 'meteor-boilerplate' },
-      { 'root' : 'meteor-boilerplate.bat' }
-    ]
   }
-});
-
-Template.home.events({
 });
 
 
