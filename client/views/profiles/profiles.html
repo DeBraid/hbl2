@@ -3,27 +3,32 @@
       <h1>Candidates</h1>
       <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
       </div>
+
       <div class="ui two column stackable grid">
         {{#each profile }}
           <div id="{{ name }}" class="middle aligned row">
-              <div class="center aligned column">
-                  <div class="center aligned icon-wrapper candidate-headshots">
+              <div class="column">
+                  <div class="center aligned candidate-headshots">
                     <h2>{{ fullname }}</h2>
                     <img src="{{ imagePath }}" alt="">
-                    {{> qanda }}
+                  </div>
+                  <div>
+                    {{{ bio }}}
                   </div>
               </div>
+                  
               <div class="column">
-                
-                {{{ bio }}}
-                
-
-              </div>
+                <h3>Question & Answer</h3>
+                {{> qanda }}
+              </div>  
+                    
+              
           </div>
           <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
           </div>
         {{/each }}
       </div>
+
   </div>
 
     {{> all }}
