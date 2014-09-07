@@ -1,5 +1,5 @@
 Deps.autorun(function () {
-  document.title = Session.get('sitetitle') || 'Meteor Boilerplate';
+  document.title = Session.get('sitetitle') || 'Hamilton Business Leaders';
 });
 
 window.SiteTitle = {

@@ -1,29 +1,30 @@
 <template name="profiles">
   <div class="main-content padding-wrapper">
-        <h1>Candidates</h1>
-        <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
-        </div>
-        <div class="ui two column stackable grid">
-            {{#each profile }}
-            <div id="{{ name }}" class="middle aligned row">
-                <div class="center aligned column">
-                    <div class="center aligned icon-wrapper candidate-headshots">
+      <h1>Candidates</h1>
+      <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
+      </div>
+      <div class="ui two column stackable grid">
+        {{#each profile }}
+          <div id="{{ name }}" class="middle aligned row">
+              <div class="center aligned column">
+                  <div class="center aligned icon-wrapper candidate-headshots">
                     <h2>{{ fullname }}</h2>
                     <img src="{{ imagePath }}" alt="">
-                    </div>
-                </div>
-                <div class="column">
-                  
-                  {{{ bio }}}
-                  
+                    {{> qanda }}
+                  </div>
+              </div>
+              <div class="column">
+                
+                {{{ bio }}}
+                
 
-                </div>
-            </div>
-            <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
-        </div>
-            {{/each }}
-        </div>
-    </div>
+              </div>
+          </div>
+          <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
+          </div>
+        {{/each }}
+      </div>
+  </div>
 
     {{> all }}
 </template>
