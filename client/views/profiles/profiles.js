@@ -23,16 +23,5 @@ Template.all.helpers({
 });
 
 Template.profiles.rendered = function () {
-  var splitURL = document.URL.split('#');
-  var targetDiv = splitURL[1];
-
-  $('html, body').animate({
-      scrollTop: $("#" + targetDiv + "").offset().top
-  }, 2000);
-
-};
-
-Template.profiles.rendered = function () {
-    // init 
-    $('.ui.accordion').accordion();
+  $('.ui.accordion').accordion();
 };
