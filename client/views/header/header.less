@@ -13,7 +13,7 @@
 .header-wrapper {
     background: url('/images/bg-hammer.jpg') no-repeat center center;
     background-size: cover;
-    height: 500px;
+    height: 560px;
     background-position: 25% 25%;
     transition: height 0.8s;
         color: @headerFontColor;
@@ -28,7 +28,7 @@
     }
 
     .resize.button {
-        margin-top: 40px;
+        margin-bottom: 0.5em;
         font-size: 1.5em;
     }
 
@@ -45,10 +45,17 @@
     }
 }
 
-.HBLlogo {
-    background-color: rgba(233,233,233,0.5);
-}
+
 
 #subHeaderText {
+    background-color: rgba(233,233,233,0.5);
     padding: 1px;
+
+    h2 {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    button.ui.blue.button.massive {
+        margin-top: 10px;
+    }
 }
