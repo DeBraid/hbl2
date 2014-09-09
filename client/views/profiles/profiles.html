@@ -14,11 +14,12 @@
                   </div>
                   <div>
                     {{{ bio }}}
+                    <h5>Visit {{ fullname }} campaign homepage <a href="{{ homepage }}">by clicking here.</a></h5>
                   </div>
               </div>
                   
               <div class="column">
-                <h3>Question & Answer</h3>
+                <h3>Candidate Response to Hamilton Business Leader Questionnaire</h3>
                 {{> qanda }}
               </div>  
                     
@@ -37,15 +38,15 @@
 <template name="all">
   <div id="all" class="main-content padding-wrapper">
         <h1>All Candidates</h1>
+        <h3>For complete list of Nominated Candidates for Mayor and Ward Councillors, visit <a href="http://www.hamilton.ca/CityDepartments/CorporateServices/Clerks/MunicipalElection/Nominated-Candidates-for-Mayor-Councillors.htm" target="_blank">hamilton.ca</a>.</h3>
           {{#each person }}
             <div class="ui fitted horizontal icon divider"><i class="user icon"></i></div>
             <div class="ui one column stackable grid">
               
               <div class="middle aligned row">
-                  <div class="center aligned column">
-                    <div id="{{ name }}" class="center aligned icon-wrapper">
-                      <h4>{{ fullname }}</h4>
-                      <p>{{ email }}</p>
+                  <div class="column">
+                    <div id="{{ name }}" class="all-candidates">
+                      <p>{{ fullname }}: {{ email }}</p>
                     </div>
                 </div>
             </div>

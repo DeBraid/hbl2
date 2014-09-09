@@ -1,5 +1,5 @@
 <template name="home">
-    <div class="ui three column main-content features grid">
+    <div class="ui five column main-content features grid">
         {{#each feature}}
         <div class="center aligned column">
             <a href="{{path}}" class="ui unstyled no-hover-styles no-underline link icon header">
@@ -8,6 +8,39 @@
             </a>
         </div>
         {{/each}}
+    </div>
+
+
+    <div id="breakfast" class="main-content padding-wrapper">
+        <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
+        </div>
+        <div class="ui two column stackable grid">
+            <div class="middle aligned row">
+                <div class="column">
+                    <h3 class="large ui header">Hamilton Business Leaders <div class="sub header">presents:</div></h3>
+                    
+
+
+                    <div class="ui info message">
+
+                        <div class="sub header">
+                        <h3>MAYORAL CANDIDATES BREAKFAST FORUM</h3>
+                            <p>Thursday September 18, 2014 from 7:30AM - 9:30AM</p>
+                            <p>Michelangelos, 1555 Upper Ottawa St, Hamilton, ON</p>
+                            
+                        </div>
+                    </div>
+                  
+                    <button class="ui blue button large"><a href="http://events.r20.constantcontact.com/register/event?oeidk=a07e9sdfhgbad0fbd3c&llr=amihvgeab" style="text-decoration:none">Register Now</a></button>
+
+                </div>
+                <div class="center aligned column">
+                    <div class="center aligned icon-wrapper">
+                        <i class="circular massive blue coffee icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="packages" class="main-content padding-wrapper">
@@ -22,22 +55,43 @@
                 </div>
                 <div class="column">
                     
-                    <h3 class="large ui header">Hamilton Business Leaders <div class="sub header">presents 2014 Hamilton Mayorial Q&A</div></h3>
+                    <h3 class="large ui header">2014 Mayoral Candidates <div class="sub header"></div></h3>
                     <p>We asked them for answers to some prudent city building questions.</p>
 
                     {{> questions }}
 
-                    <div class="ui info message">
-                        <div class="header">
-                            <h3>MAYORAL CANDIDATES BREAKFAST FORUM</h3>
-                        </div>
-                        <div class="sub header">
-                            <p>Thursday September 18, 2014 from 7:30AM - 9:30AM</p>
-                            <p>Michelangelos, 1555 Upper Ottawa St, Hamilton, ON</p>
-                            <p><a href="http://events.r20.constantcontact.com/register/event?oeidk=a07e9sdfhgbad0fbd3c&llr=amihvgeab">Register Now</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="platform" class="main-content padding-wrapper">
+        <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
+        </div>
+        <div class="ui two column stackable grid">
+            <div class="middle aligned row">
+                <div class="column">
+                    <h3 class="large ui header">Our Platform</h3>
+
+                    <p>Read our 12 point platform</p>
+                      <div class="column">
+                        <div class="ui accordion">
+                        {{#each candidateQuestions }}
+                            <div class="title">
+                                <i class="dropdown icon"></i> {{ questionStub }}
+                            </div>
+                            <div class="content">
+                                <p class="questions">{{ question }}</p>
+                            </div>
+                        {{/each}}
                         </div>
                     </div>
-
+                    
+                </div>
+                <div class="center aligned column">
+                    <div class="center aligned icon-wrapper">
+                        <i class="circular massive blue file icon"></i>
+                    </div>
                 </div>
             </div>
         </div>
