@@ -2,7 +2,7 @@ Template.home.helpers({
   'feature' : function () {
     return [
       { 'text' : 'Candidates', 'icon' : 'user', 'path' : '#packages' },
-      { 'text' : 'Our Platform', 'icon' : 'file', 'path' : '#platform' },
+      { 'text' : 'Our Priorities', 'icon' : 'file', 'path' : '#platform' },
       { 'text' : 'Mayoral Forum', 'icon' : 'coffee', 'path' : '#breakfast' },
       { 'text' : 'Blog', 'icon' : 'terminal', 'path' : '/blog' },
       { 'text' : 'Organizers', 'icon' : 'briefcase', 'path' : '#console-tool' }
