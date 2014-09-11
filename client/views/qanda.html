@@ -3,15 +3,81 @@
 
     <div class="middle aligned row">
 
+            {{> brianqanda }}
+        
+    </div>   
+
+
+
+</template>
+
+<template name="fredqanda">
+
+
+    <div class="middle aligned row">
+
         <div class="column">
             <div class="ui accordion">
-            {{#each candidateQuestions }}
+            {{#each fredQuestions }}
                 <div class="title">
                     <i class="dropdown icon"></i> {{ questionStub }}
                 </div>
                 <div class="content">
                     <p class="questions">{{ question }}</p>
-                    <p class="answers">{{ answer }}</p>
+                    <h4>Answer:</h4>
+                    <p class="answers"> {{ answer }}</p>
+                </div>
+            {{/each}}
+            </div>
+        </div>
+
+    </div>   
+
+
+
+</template>
+
+<template name="bradqanda">
+
+
+    <div class="middle aligned row">
+
+        <div class="column">
+            <div class="ui accordion">
+            {{#each bradQuestions }}
+               <div class="title">
+                    <i class="dropdown icon"></i> {{ questionStub }}
+                </div>
+                <div class="content">
+                    <p class="questions">{{ question }}</p>
+                    <h4>Answer:</h4>
+                    <p class="answers"> {{ answer }}</p>
+                </div>
+            {{/each}}
+            </div>
+        </div>
+
+    </div>   
+
+
+
+</template>
+
+<template name="brianqanda">
+
+
+    <div class="middle aligned row">
+
+        <div class="column">
+            <div class="ui accordion">
+            {{#each brianQuestions }}
+                <div class="title">
+                    <i class="dropdown icon"></i> {{ questionStub }}
+                </div>
+                <div class="content">
+                    <p class="questions">{{ question }}</p>
+                    <h4>Answer:</h4>
+                    <p class="answers"> {{ answer }}</p>
                 </div>
             {{/each}}
             </div>

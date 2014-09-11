@@ -20,7 +20,19 @@
                   
               <div class="column">
                 <h3>Candidate Response to Hamilton Business Leader Questionnaire</h3>
-                {{> qanda }}
+                  
+                {{#if candiateNameHelper=Fred }}  
+                  <h1>foo</h1>
+                  {{> fredqanda }}
+                {{/if }}  
+                {{#if candiateNameHelper=Brian }}  
+                  {{> brianqanda }}
+                {{/if }}  
+                {{#if candiateNameHelper=Brad }}  
+                  {{> bradqanda }}
+                {{/if }}  
+                
+
               </div>  
                     
               
@@ -54,7 +66,4 @@
         </div>
         {{/each }}
     </div>
-
-
-  
 </template>
