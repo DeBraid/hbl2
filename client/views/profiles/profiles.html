@@ -1,56 +1,25 @@
 <template name="profiles">
   <div class="main-content padding-wrapper">
-      <h1>Candidates</h1>
-      <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
-      </div>
+    <h1>Candidates</h1>
+    <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
+    </div>
 
-      <div class="ui two column stackable grid">
-        {{#each profile }}
-          <div id="{{ name }}" class="middle aligned row">
-              <div class="column">
-                  <div class="center aligned candidate-headshots">
-                    <h2>{{ fullname }}</h2>
-                    <img src="{{ imagePath }}" alt="">
-                  </div>
-                  <div>
-                    {{{ bio }}}
-                    <h5>Visit {{ fullname }} campaign homepage <a href="{{ homepage }}">by clicking here.</a></h5>
-                  </div>
-              </div>
-                  
-              <div class="column">
-                <h3>Candidate Response to Hamilton Business Leader Questionnaire</h3>
-                  
-                {{#if candiateNameHelper=Fred }}  
-                  <h1>foo</h1>
-                  {{> fredqanda }}
-                {{/if }}  
-                {{#if candiateNameHelper=Brian }}  
-                  {{> brianqanda }}
-                {{/if }}  
-                {{#if candiateNameHelper=Brad }}  
-                  {{> bradqanda }}
-                {{/if }}  
-                
-
-              </div>  
-                    
-              
-          </div>
-          <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
-          </div>
-        {{/each }}
-      </div>
+    <div class="ui two column stackable grid">
+        {{> bradqanda }}
+        {{> fredqanda }}
+        {{> brianqanda }}
+    </div>
 
   </div>
 
-    {{> all }}
+  {{> all }}
 </template>
 
 <template name="all">
   <div id="all" class="main-content padding-wrapper">
         <h1>All Candidates</h1>
         <h3>For complete list of Nominated Candidates for Mayor and Ward Councillors, visit <a href="http://www.hamilton.ca/CityDepartments/CorporateServices/Clerks/MunicipalElection/Nominated-Candidates-for-Mayor-Councillors.htm" target="_blank">hamilton.ca</a>.</h3>
+
           {{#each person }}
             <div class="ui fitted horizontal icon divider"><i class="user icon"></i></div>
             <div class="ui one column stackable grid">
@@ -63,7 +32,7 @@
                 </div>
             </div>
             
-        </div>
+          </div>
         {{/each }}
     </div>
 </template>

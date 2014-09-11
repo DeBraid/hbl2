@@ -3,34 +3,8 @@
 
     <div class="middle aligned row">
 
-            {{> brianqanda }}
+    <h1>Q and A Template: empty</h1>
         
-    </div>   
-
-
-
-</template>
-
-<template name="fredqanda">
-
-
-    <div class="middle aligned row">
-
-        <div class="column">
-            <div class="ui accordion">
-            {{#each fredQuestions }}
-                <div class="title">
-                    <i class="dropdown icon"></i> {{ questionStub }}
-                </div>
-                <div class="content">
-                    <p class="questions">{{ question }}</p>
-                    <h4>Answer:</h4>
-                    <p class="answers"> {{ answer }}</p>
-                </div>
-            {{/each}}
-            </div>
-        </div>
-
     </div>   
 
 
@@ -39,52 +13,144 @@
 
 <template name="bradqanda">
 
+    {{#each profile }}
+          <div id="{{ name }}" class="middle aligned row">
+              <div class="column">
+                  <div class="center aligned candidate-headshots">
+                    <h2>{{ fullname }}</h2>
+                    <img src="{{ imagePath }}" alt="">
+                  </div>
+                  <div>
+                    {{{ bio }}}
+                    <h5>Visit {{ fullname }} campaign homepage <a href="{{ homepage }}">by clicking here.</a></h5>
+                  </div>
+              </div>
+                  
+              <div class="column">
+                <h3>Candidate Response to Hamilton Business Leader Questionnaire</h3>
+                  
+                <div class="middle aligned row">
 
-    <div class="middle aligned row">
+                    <div class="column">
+                        <div class="ui accordion">
+                        {{#each bradQuestions }}
+                            <div class="title">
+                                <i class="dropdown icon"></i> {{ questionStub }}
+                            </div>
+                            <div class="content">
+                                <p class="questions">{{ question }}</p>
+                                <h4>Answer:</h4>
+                                <p class="answers"> {{ answer }}</p>
+                            </div>
+                        {{/each}}
+                        </div>
+                    </div>
 
-        <div class="column">
-            <div class="ui accordion">
-            {{#each bradQuestions }}
-               <div class="title">
-                    <i class="dropdown icon"></i> {{ questionStub }}
-                </div>
-                <div class="content">
-                    <p class="questions">{{ question }}</p>
-                    <h4>Answer:</h4>
-                    <p class="answers"> {{ answer }}</p>
-                </div>
-            {{/each}}
-            </div>
-        </div>
+                </div>   
 
-    </div>   
+              </div>  
+                    
+              
+          </div>
+          <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
+          </div>
+        {{/each }}
 
+
+</template>
+
+<template name="fredqanda">
+
+    {{#each profile }}
+          <div id="{{ name }}" class="middle aligned row">
+              <div class="column">
+                  <div class="center aligned candidate-headshots">
+                    <h2>{{ fullname }}</h2>
+                    <img src="{{ imagePath }}" alt="">
+                  </div>
+                  <div>
+                    {{{ bio }}}
+                    <h5>Visit {{ fullname }} campaign homepage <a href="{{ homepage }}">by clicking here.</a></h5>
+                  </div>
+              </div>
+                  
+              <div class="column">
+                <h3>Candidate Response to Hamilton Business Leader Questionnaire</h3>
+                  
+                <div class="middle aligned row">
+
+                    <div class="column">
+                        <div class="ui accordion">
+                        {{#each fredQuestions }}
+                            <div class="title">
+                                <i class="dropdown icon"></i> {{ questionStub }}
+                            </div>
+                            <div class="content">
+                                <p class="questions">{{ question }}</p>
+                                <h4>Answer:</h4>
+                                <p class="answers"> {{ answer }}</p>
+                            </div>
+                        {{/each}}
+                        </div>
+                    </div>
+
+                </div>   
+
+              </div>  
+                    
+              
+          </div>
+          <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
+          </div>
+        {{/each }}
 
 
 </template>
 
 <template name="brianqanda">
 
+    {{#each profile }}
+          <div id="{{ name }}" class="middle aligned row">
+              <div class="column">
+                  <div class="center aligned candidate-headshots">
+                    <h2>{{ fullname }}</h2>
+                    <img src="{{ imagePath }}" alt="">
+                  </div>
+                  <div>
+                    {{{ bio }}}
+                    <h5>Visit {{ fullname }} campaign homepage <a href="{{ homepage }}">by clicking here.</a></h5>
+                  </div>
+              </div>
+                  
+              <div class="column">
+                <h3>Candidate Response to Hamilton Business Leader Questionnaire</h3>
+                  
+                <div class="middle aligned row">
 
-    <div class="middle aligned row">
+                    <div class="column">
+                        <div class="ui accordion">
+                        {{#each brianQuestions }}
+                            <div class="title">
+                                <i class="dropdown icon"></i> {{ questionStub }}
+                            </div>
+                            <div class="content">
+                                <p class="questions">{{ question }}</p>
+                                <h4>Answer:</h4>
+                                <p class="answers"> {{ answer }}</p>
+                            </div>
+                        {{/each}}
+                        </div>
+                    </div>
 
-        <div class="column">
-            <div class="ui accordion">
-            {{#each brianQuestions }}
-                <div class="title">
-                    <i class="dropdown icon"></i> {{ questionStub }}
-                </div>
-                <div class="content">
-                    <p class="questions">{{ question }}</p>
-                    <h4>Answer:</h4>
-                    <p class="answers"> {{ answer }}</p>
-                </div>
-            {{/each}}
-            </div>
-        </div>
+                </div>   
 
-    </div>   
-
+              </div>  
+                    
+              
+          </div>
+          <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
+          </div>
+        {{/each }}
 
 
 </template>
