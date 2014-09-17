@@ -15,3 +15,4 @@ Template.all.helpers({
 Template.profiles.rendered = function () {
   $('.ui.accordion').accordion();
 };
+
