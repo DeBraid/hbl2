@@ -1,10 +1,10 @@
 <template name="profiles">
   <div class="main-content padding-wrapper">
-    <h1>Candidates</h1>
     {{> youtube }}
     <div class="ui fitted horizontal icon divider"><i class="align justify icon"></i>
     </div>
 
+    <h1>Candidates</h1>
     <div class="ui two column stackable grid">
         {{> bradqanda }}
         {{> fredqanda }}
@@ -39,16 +39,20 @@
 </template>
 
 <template name="youtube">
-  <h3>Watch Video Interviews with Candidates</h3>
-  <div class="ui accordion fluid">
-    {{#each videos}}
-        <div class="title">
-            <i class="video icon"></i>{{ title }}
-        </div>
-        <div class="content">
-            <iframe width="560" height="315" src="{{ url }}" frameborder="0" allowfullscreen></iframe>
-        </div>
-    {{/each}}
+  
+  <div id="youtube">
+    <h1>Watch Video Interviews with Candidates</h1>
+    <div class="ui accordion fluid">
+      {{#each videos}}
+          <div class="title">
+              <i class="video icon"></i>{{ title }}
+          </div>
+          <div class="content">
+              <iframe width="560" height="315" src="{{ url }}" frameborder="0" allowfullscreen></iframe>
+          </div>
+      {{/each}}
 
-</div>
+    </div>
+  </div>
+
 </template>
